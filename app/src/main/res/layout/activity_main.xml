@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="test.com.queryapp.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="82dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="智能农作物照料系统"
+            android:textColor="#000"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="240dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="48dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="温度："
+                android:textColor="#000"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="100dp" />
+
+            <TextView
+                android:id="@+id/edTemperature"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="27.2"
+                tools:layout_editor_absoluteX="42dp"
+                tools:layout_editor_absoluteY="80dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="湿度："
+                android:textColor="#000"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="100dp" />
+
+            <TextView
+                android:id="@+id/edWater"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="54.9"
+                tools:layout_editor_absoluteX="42dp"
+                tools:layout_editor_absoluteY="80dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="火焰："
+                android:textColor="#000"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="100dp" />
+
+            <TextView
+                android:id="@+id/edFire"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="无"
+                tools:layout_editor_absoluteX="42dp"
+                tools:layout_editor_absoluteY="80dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="烟雾："
+                android:textColor="#000"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="38dp" />
+
+            <TextView
+                android:id="@+id/edSmoke"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="无"
+                tools:layout_editor_absoluteX="42dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="光照："
+                android:textColor="#000"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="100dp" />
+
+            <TextView
+                android:id="@+id/edLight"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="有"
+                tools:layout_editor_absoluteX="42dp"
+                tools:layout_editor_absoluteY="80dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9"
+        tools:ignore="MissingConstraints">
+
+        <Switch
+            android:id="@+id/swAuto"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:onClick="onSwitchClicked"
+            android:text="自动控制" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:id="@+id/swFan"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:onClick="onSwitchClicked"
+                android:text="风扇" />
+
+            <Switch
+                android:id="@+id/swLight"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:onClick="onSwitchClicked"
+                android:text="电灯" />
+
+            <Switch
+                android:id="@+id/swWater"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:onClick="onSwitchClicked"
+                android:text="水阀" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="71dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btnFlash"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:text="刷新" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
